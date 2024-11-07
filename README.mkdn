@@ -1,6 +1,6 @@
-<img src="https://raw.github.com/DerpFest-AOSP/manifest/15/derp.png">
+![crystalOS-AOSP](https://raw.github.com/crystalOS-AOSP/android_manifest/15/crystal.jpg)
 
-DerpFest
+CrystalOS
 ---------------
 
 
@@ -8,12 +8,12 @@ Getting Started
 ---------------
 
 To get started with Android, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
-To set up your build environment and sync DerpFest, please follow this guide: [Link](https://raw.githubusercontent.com/nathanchance/android-tools/main/guides/building_aosp.txt)
+To set up your build environment and sync CrystalOS, please follow this guide: [Link](https://raw.githubusercontent.com/nathanchance/android-tools/main/guides/building_aosp.txt)
 
-**To initialize your local repository using the AOSP/CAF based DerpFest source, use a command like this:**
+**To initialize your local repository using the AOSP/CAF based Crystal source, use a command like this:**
 
 ```bash
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15
+repo init -u https://github.com/crystalOS-AOSP/android_manifest.git -b 15
 ```
 **Sync up with this command:**
 ```bash
@@ -23,7 +23,7 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 Building the source
 ---------------
 
-The source at DerpFest is well configured for building.
+The source at CrystalOS is well configured for building.
 
 **Initiate the build with:**
 ```bash
@@ -31,11 +31,11 @@ The source at DerpFest is well configured for building.
 ```
 **Prepare your device with:**
 ```bash
-lunch derp_$device-user
+lunch crystal_$device-user
 ```
 **Then fire it off with:**
 ```bash
-mka derp
+m bacon -j
 ```
 
 Thanks section
@@ -44,6 +44,7 @@ Thanks section
 Here's my thanks to people who made this possible:
 
 * ABC
+* Derpfest
 * AICP
 * AOSiP
 * AOSPA
