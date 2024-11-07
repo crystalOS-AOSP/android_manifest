@@ -7,6 +7,10 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
 
+  <remote  name="crystal"
+           fetch="https://github.com/crystalOS-AOSP"
+           revision="15" />
+
   <remote  name="derp"
            fetch="https://github.com/DerpFest-AOSP"
            revision="15" />
@@ -74,7 +78,7 @@
   <project path="external/zstd" name="external_zstd" remote="derp" />
 
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="derp" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="derp" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crystal" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="derp" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="derp" />
   <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="derp" />
@@ -154,23 +158,23 @@
 
   <!-- Packages -->
   <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/DerpLauncher" name="packages_apps_DerpLauncher" groups="pdk-fs,sysui-studio" remote="derp" />
-  <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="derp" />
+  <project path="packages/apps/DerpLauncher" name="packages_apps_DerpLauncher" groups="pdk-fs,sysui-studio" remote="crystal" />
+  <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="crystal" />
   <project path="packages/apps/EmergencyInfo" name="packages_apps_EmergencyInfo" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/Flash" name="packages_apps_Flash" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/Panic" name="packages_apps_Panic" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="derp" />
-  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="derp" />
+  <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="crystal" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="crystal" />
   <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp" />
   <project path="packages/apps/Ripple" name="packages_apps_Ripple" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="derp" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="crystal" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="derp" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="crystal" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="derp" />
-  <project path="packages/apps/Updater" name="packages_apps_Updater" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="derp" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" groups="pdk-fs" remote="crystal" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="crystal" />
   <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="derp" />
   <project path="packages/modules/common" name="packages_modules_common" groups="pdk" remote="derp" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="derp" />
@@ -206,7 +210,7 @@
 
   <!-- Vendor -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" groups="qcom,qssi" remote="derp" />
-  <project path="vendor/derp" name="vendor_derp" remote="derp">
+  <project path="vendor/derp" name="vendor_derp" remote="crystal">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/fontage" name="vendor_fontage" remote="derp" />
